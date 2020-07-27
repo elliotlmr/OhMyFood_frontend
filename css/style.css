@@ -1,6 +1,88 @@
+@font-face {
+  font-family: "Devonshire";
+  src: url(../fonts/Devonshire-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Croissant";
+  src: url(../fonts/croissantone-regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Dancing";
+  src: url(../fonts/DancingScript-Regular.otf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Kaushan";
+  src: url(../fonts/kaushanscript-regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gelder";
+  src: url(../fonts/GelderSans-ExtraBold.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
 html {
   width: 100%;
   height: 100%;
+}
+
+header {
+  font-family: "Gelder", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  color: #f9ca48;
+}
+
+.menu-display__top--first {
+  font-family: "Devonshire", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.menu-display__top--first:visited {
+  color: inherit;
+}
+
+.menu-display__top--second {
+  font-family: "Croissant", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.menu-display__top--second:visited {
+  color: inherit;
+}
+
+.menu-display__bot--third {
+  font-family: "Dancing", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.menu-display__bot--third:visited {
+  color: inherit;
+}
+
+.menu-display__bot--fourth {
+  font-family: "Kaushan", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+.menu-display__bot--fourth:visited {
+  color: inherit;
+}
+
+.next-btn {
+  font-family: "Gelder", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+footer {
+  font-family: "Gelder", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+}
+footer a {
+  color: #f9ca48;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

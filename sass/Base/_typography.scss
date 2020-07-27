@@ -1,0 +1,51 @@
+header {
+    font-family: "Gelder", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: $color-secondary;
+}
+
+.menu-display__top--first {
+    font-family: "Devonshire", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    &:visited {
+        color: inherit;
+    }
+}
+
+.menu-display__top--second {
+    font-family: "Croissant", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    &:visited {
+        color: inherit;
+    }
+}
+
+.menu-display__bot--third {
+    font-family: "Dancing", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    &:visited {
+        color: inherit;
+    }
+}
+
+.menu-display__bot--fourth {
+    font-family: "Kaushan", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    &:visited {
+        color: inherit;
+    }
+}
+
+.next-btn {
+    font-family: "Gelder", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+
+footer {
+    font-family: "Gelder", Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+    & a {
+        color: $color-secondary;
+        text-decoration: none;
+    }
+}

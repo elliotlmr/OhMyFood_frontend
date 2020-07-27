@@ -1,3 +1,38 @@
+@font-face {
+    font-family: "Devonshire";
+    src: url(../fonts/Devonshire-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Croissant";
+    src: url(../fonts/croissantone-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Dancing";
+    src: url(../fonts/DancingScript-Regular.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Kaushan";
+    src: url(../fonts/kaushanscript-regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Gelder";
+    src: url(../fonts/GelderSans-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
 @import "./Utils/variables";
 @import "./Utils/mixins";
 
