@@ -40,6 +40,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Quicksand";
+    src: url(../fonts/Quicksand-Regular.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
 @import "./Utils/variables";
 @import "./Utils/mixins";
 

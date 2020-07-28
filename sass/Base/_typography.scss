@@ -2,6 +2,7 @@ header {
     font-family: "Gelder", Arial, Helvetica, sans-serif;
     font-size: 2.5rem;
     color: $color-secondary;
+    letter-spacing: -4px;
 }
 
 .menu-display__top--first {
@@ -54,8 +55,9 @@ header {
 }
 
 .next-btn {
-    font-family: "Gelder", Arial, Helvetica, sans-serif;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
+    letter-spacing: -1px;
 }
 
 .menu-sub {
@@ -63,8 +65,8 @@ header {
 }
 
 footer {
-    font-family: "Gelder", Arial, Helvetica, sans-serif;
-    font-size: 1.25rem;
+    font-family: "Quicksand", Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
     & a {
         color: $color-secondary;
         text-decoration: none;

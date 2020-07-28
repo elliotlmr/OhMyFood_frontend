@@ -7,3 +7,28 @@
     flex-direction: column;
     justify-content: center;
 }
+
+@mixin page-menu-setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    box-shadow: $menu-shadow;
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        &--dishes {
+            text-align: left;
+        }
+        &--prices {
+            text-align: right;
+        }
+    }
+    li {
+        list-style-type: none;
+        margin-bottom: 15px;
+    }
+}

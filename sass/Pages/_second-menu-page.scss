@@ -1,0 +1,4 @@
+.second-menu {
+    @include page-menu-setting;
+    background-color: $second-bg;
+}

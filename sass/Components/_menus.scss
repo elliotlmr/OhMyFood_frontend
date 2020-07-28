@@ -17,6 +17,13 @@
         &--fourth {
             @include menu-setting;
             background-color: $fourth-bg;
+            .menu-title {
+                margin-bottom: 5px;
+            }
         }
     }
+}
+
+.menu-sub {
+    margin-top: 0%;
 }
