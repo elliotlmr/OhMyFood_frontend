@@ -1,0 +1,4 @@
+.fourth-menu {
+    @include page-menu-setting;
+    background-color: $fourth-bg;
+}
