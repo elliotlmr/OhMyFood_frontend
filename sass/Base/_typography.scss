@@ -1,44 +1,65 @@
 header {
     font-family: "Gelder", Arial, Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: $color-secondary;
 }
 
 .menu-display__top--first {
     font-family: "Devonshire", Arial, Helvetica, sans-serif;
     text-decoration: none;
+    font-size: 1.1rem;
     &:visited {
         color: inherit;
+    }
+    .menu-sub {
+        font-size: 1.3rem;
     }
 }
 
 .menu-display__top--second {
     font-family: "Croissant", Arial, Helvetica, sans-serif;
     text-decoration: none;
+    font-size: 0.85rem;
     &:visited {
         color: inherit;
+    }
+    .menu-sub {
+        font-family: "Croissant", Arial, Helvetica, sans-serif;
+        font-size: 1.4rem;
     }
 }
 
 .menu-display__bot--third {
     font-family: "Dancing", Arial, Helvetica, sans-serif;
     text-decoration: none;
+    font-size: 1.3rem;
     &:visited {
         color: inherit;
+    }
+    .menu-sub {
+        font-size: 1.4rem;
     }
 }
 
 .menu-display__bot--fourth {
     font-family: "Kaushan", Arial, Helvetica, sans-serif;
     text-decoration: none;
+    font-size: 1.2rem;
     &:visited {
         color: inherit;
+    }
+    .menu-sub {
+        font-size: 1.4rem;
     }
 }
 
 .next-btn {
     font-family: "Gelder", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
+}
+
+.menu-sub {
+    font-family: "Segoe", Arial, Helvetica, sans-serif;
 }
 
 footer {

@@ -1,0 +1,22 @@
+.menu-display {
+    &__top {
+        &--first {
+            @include menu-setting;
+            background-color: $first-bg;
+        }
+        &--second {
+            @include menu-setting;
+            background-color: $second-bg;
+        }
+    }
+    &__bot {
+        &--third {
+            @include menu-setting;
+            background-color: $third-bg;
+        }
+        &--fourth {
+            @include menu-setting;
+            background-color: $fourth-bg;
+        }
+    }
+}

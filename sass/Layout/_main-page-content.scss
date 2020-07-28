@@ -1,0 +1,22 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 73%;
+}
+
+.menu-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 95%;
+    &__top {
+        display: flex;
+        justify-content: center;
+    }
+    &__bot {
+        display: flex;
+        justify-content: center;
+    }
+}

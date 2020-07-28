@@ -33,6 +33,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Segoe";
+    src: url(../fonts/segoeprb.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
 @import "./Utils/variables";
 @import "./Utils/mixins";
 

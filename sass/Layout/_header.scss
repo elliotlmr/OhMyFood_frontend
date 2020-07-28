@@ -1,0 +1,8 @@
+.head {
+    display: flex;
+    justify-content: center;
+    background-color: $color-primary;
+    &__title {
+        margin: 10px 10px 10px 10px;
+    }
+}
