@@ -1,14 +1,49 @@
 .next-btn {
     width: 230px;
-    display: block;
+    height: 45px;
+    display: flex;
+    justify-content: center;
     margin: auto;
     background-color: $color-primary;
     color: $color-secondary;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    border: none;
     border-radius: 8px;
-    &:active, &:focus {
-        outline-style: none;
+    &__txt {
+        margin: 0%;
+        padding-top: 7px;
+        position: relative;
+        text-align: center;
+        transform: scaleX(1);
+        transform-origin: bottom;
+    }
+    &__anim {
+        display: flex;
+        position: absolute;
+        opacity: 0%;
+        transform: scaleX(0);
+        &--1 {
+            @include dot;
+            animation: dots-jump 300ms both infinite;
+        }
+        &--2 {
+            @include dot;
+            animation: dots-jump 300ms both infinite;
+        }
+        &--3 {
+            @include dot;
+            animation: dots-jump 300ms both infinite;
+        }
+    }
+    &:hover {
+        & .next-btn__txt {
+            animation: btn-txt 300ms forwards;
+        }
+        & .next-btn__anim {
+            animation: dots-bar 200ms forwards;
+            @for $i from 1 through 3 {
+                &--#{$i} {
+                    animation-delay: 50ms * $i;
+                }
+            }
+        }
     }
 }
