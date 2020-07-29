@@ -2,10 +2,25 @@
     display: flex;
     justify-content: space-between;
     background-color: $color-primary;
+    position: fixed;
+    bottom: 0%;
+    margin: 0px auto;
+    max-width: 900px;
+    width: 100%;
     &__left {
         margin: 0px 25px 0px 25px;
+        &--title {
+            &:hover, &:active {
+                animation: wiggle 100ms cubic-bezier(.4, .1, .6, .9) infinite;
+            }
+        }
     }
     &__right {
         margin: 0px 25px 0px 25px;
+        &--title {
+            &:hover, &:active {
+                animation: wiggle 100ms cubic-bezier(.4, .1, .6, .9) infinite;
+            }
+        }
     }
 }

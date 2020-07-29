@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     background-color: $color-primary;
+    position: relative;
     &__title {
         margin: 10px 10px 10px 10px;
     }

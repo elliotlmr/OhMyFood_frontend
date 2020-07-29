@@ -40,6 +40,14 @@
   font-style: normal;
   font-weight: normal;
 }
+@keyframes wiggle {
+  25% {
+    transform: translateX(1%);
+  }
+  75% {
+    transform: translateX(-1%);
+  }
+}
 html {
   width: 100%;
   height: 100%;
@@ -47,7 +55,6 @@ html {
 
 body {
   max-width: 900px;
-  height: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -70,8 +77,12 @@ header {
 .menu-display__top--first:visited {
   color: inherit;
 }
+.menu-display__top--first .menu-title {
+  color: #3d1319;
+}
 .menu-display__top--first .menu-sub {
   font-size: 1.3rem;
+  color: #3d1319;
 }
 
 .menu-display__top--second {
@@ -130,6 +141,7 @@ footer a {
   text-decoration: none;
 }
 
+/** MENUS DE LA PAGE ACCUEIL **/
 .menu-display__top--first {
   width: 210px;
   height: 310px;
@@ -139,6 +151,13 @@ footer a {
   flex-direction: column;
   justify-content: center;
   background-color: #fcdfdb;
+}
+.menu-display__top--first i {
+  font-size: 1.8rem;
+}
+.menu-display__top--first .menu-title {
+  margin-top: 0%;
+  margin-bottom: 10px;
 }
 .menu-display__top--second {
   width: 210px;
@@ -178,6 +197,7 @@ footer a {
   margin-top: 0%;
 }
 
+/** MENUS FULL SCREEN **/
 .next-btn {
   width: 230px;
   display: block;
@@ -189,11 +209,15 @@ footer a {
   border: none;
   border-radius: 8px;
 }
+.next-btn:active, .next-btn:focus {
+  outline-style: none;
+}
 
 .head {
   display: flex;
   justify-content: center;
   background-color: #579c87;
+  position: relative;
 }
 .head__title {
   margin: 10px 10px 10px 10px;
@@ -203,7 +227,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 73%;
+  height: 100%;
+  padding-bottom: 10%;
 }
 
 .menu-display {
@@ -212,6 +237,7 @@ main {
   justify-content: center;
   text-align: center;
   height: 95%;
+  margin-top: 40px;
 }
 .menu-display__top {
   display: flex;
@@ -226,12 +252,23 @@ main {
   display: flex;
   justify-content: space-between;
   background-color: #579c87;
+  position: fixed;
+  bottom: 0%;
+  margin: 0px auto;
+  max-width: 900px;
+  width: 100%;
 }
 .footer__left {
   margin: 0px 25px 0px 25px;
 }
+.footer__left--title:hover, .footer__left--title:active {
+  animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
+}
 .footer__right {
   margin: 0px 25px 0px 25px;
+}
+.footer__right--title:hover, .footer__right--title:active {
+  animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
 }
 
 .first-menu {

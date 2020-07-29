@@ -1,8 +1,17 @@
+/** MENUS DE LA PAGE ACCUEIL **/
+
 .menu-display {
     &__top {
         &--first {
             @include menu-setting;
             background-color: $first-bg;
+            i {
+                font-size: 1.8rem;
+            }
+            .menu-title {
+                margin-top: 0%;
+                margin-bottom: 10px;
+            }
         }
         &--second {
             @include menu-setting;
@@ -27,3 +36,5 @@
 .menu-sub {
     margin-top: 0%;
 }
+
+/** MENUS FULL SCREEN **/

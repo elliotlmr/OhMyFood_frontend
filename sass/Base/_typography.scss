@@ -12,8 +12,12 @@ header {
     &:visited {
         color: inherit;
     }
+    .menu-title {
+        color: $first-txt;
+    }
     .menu-sub {
         font-size: 1.3rem;
+        color: $first-txt;
     }
 }
 
