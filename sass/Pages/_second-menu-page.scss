@@ -1,4 +1,13 @@
+main {
+    h2 {
+    margin: 40px auto 20px auto;
+    }
+}
+
 .second-menu {
     @include page-menu-setting;
     background-color: $second-bg;
+    & ul {
+        padding-left: 0%;
+    }
 }

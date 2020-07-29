@@ -1,6 +1,8 @@
+/** PAGE ACCUEIL **/
+
 header {
     font-family: "Gelder", Arial, Helvetica, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: $color-secondary;
     letter-spacing: -4px;
 }
@@ -74,5 +76,100 @@ footer {
     & a {
         color: $color-secondary;
         text-decoration: none;
+    }
+}
+
+/** AUTRES PAGES **/
+
+main {
+    h2 {
+        font-family: "Alte", Arial, Helvetica, sans-serif;
+    }
+}
+
+.first-menu {
+    color: $first-txt;
+    font-family: "Segoe", Arial, Helvetica, sans-serif;
+    &__title {
+        font-family: "Devonshire", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+    }
+    &__sub {
+        font-size: 1.2rem;
+    }
+    &__content {
+        &--dishes {
+            font-size: 0.8rem;
+        }
+        &--prices {
+            font-size: 0.85rem;
+            font-weight: bolder;
+        }
+    }
+    &__title-out {
+        &--txt {
+            font-family: "Devonshire", Arial, Helvetica, sans-serif;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.second-menu {
+    font-family: 'Times New Roman', Times, serif;
+    &__title {
+        font-family: "Croissant", Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+    }
+    &__sub {
+        font-size: 1.3rem;
+    }
+    &__content {
+        &--dishes {
+            font-size: 1.1rem;
+        }
+        &--prices {
+            font-size: 1.1rem;
+            font-weight: bolder;
+        }
+    }
+}
+
+.third-menu {
+    font-family: "Segoe", Arial, Helvetica, sans-serif;
+    &__title {
+        font-family: "Dancing", Arial, Helvetica, sans-serif;
+        font-size: 4rem;
+    }
+    &__sub {
+        font-size: 1.2rem;
+    }
+    &__content {
+        &--dishes {
+            font-size: 0.9rem;
+        }
+        &--prices {
+            font-size: 0.9rem;
+            font-weight: bolder;
+        }
+    }
+}
+
+.fourth-menu {
+    font-family: "Segoe", Arial, Helvetica, sans-serif;
+    &__title {
+        font-family: "Kaushan", Arial, Helvetica, sans-serif;
+        font-size: 4rem;
+    }
+    &__sub {
+        font-size: 1.2rem;
+    }
+    &__content {
+        &--dishes {
+            font-size: 0.9rem;
+        }
+        &--prices {
+            font-size: 0.9rem;
+            font-weight: bolder;
+        }
     }
 }

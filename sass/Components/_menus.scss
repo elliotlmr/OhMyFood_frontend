@@ -12,22 +12,34 @@
                 margin-top: 0%;
                 margin-bottom: 10px;
             }
+            &:hover {
+                animation: menu-zoom 300ms both ease;
+            }
         }
         &--second {
             @include menu-setting;
             background-color: $second-bg;
+            &:hover {
+                animation: menu-zoom 300ms both ease;
+            }
         }
     }
     &__bot {
         &--third {
             @include menu-setting;
             background-color: $third-bg;
+            &:hover {
+                animation: menu-zoom 300ms both ease;
+            }
         }
         &--fourth {
             @include menu-setting;
             background-color: $fourth-bg;
             .menu-title {
                 margin-bottom: 5px;
+            }
+            &:hover {
+                animation: menu-zoom 300ms both ease;
             }
         }
     }

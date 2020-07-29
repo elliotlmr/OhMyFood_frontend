@@ -40,6 +40,12 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "Alte";
+  src: url(../fonts/altehaasgroteskbold.ttf);
+  font-style: normal;
+  font-weight: bold;
+}
 @keyframes wiggle {
   25% {
     transform: translateX(1%);
@@ -78,6 +84,14 @@
     opacity: 0%;
   }
 }
+@keyframes menu-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.25);
+  }
+}
 html {
   width: 100%;
   height: 100%;
@@ -92,9 +106,10 @@ body {
   box-shadow: 0.5px 0.5px 7px #B0BEC5;
 }
 
+/** PAGE ACCUEIL **/
 header {
   font-family: "Gelder", Arial, Helvetica, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #f9ca48;
   letter-spacing: -4px;
 }
@@ -171,6 +186,88 @@ footer a {
   text-decoration: none;
 }
 
+/** AUTRES PAGES **/
+main h2 {
+  font-family: "Alte", Arial, Helvetica, sans-serif;
+}
+
+.first-menu {
+  color: #3d1319;
+  font-family: "Segoe", Arial, Helvetica, sans-serif;
+}
+.first-menu__title {
+  font-family: "Devonshire", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.first-menu__sub {
+  font-size: 1.2rem;
+}
+.first-menu__content--dishes {
+  font-size: 0.8rem;
+}
+.first-menu__content--prices {
+  font-size: 0.85rem;
+  font-weight: bolder;
+}
+.first-menu__title-out--txt {
+  font-family: "Devonshire", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+.second-menu {
+  font-family: "Times New Roman", Times, serif;
+}
+.second-menu__title {
+  font-family: "Croissant", Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.second-menu__sub {
+  font-size: 1.3rem;
+}
+.second-menu__content--dishes {
+  font-size: 1.1rem;
+}
+.second-menu__content--prices {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.third-menu {
+  font-family: "Segoe", Arial, Helvetica, sans-serif;
+}
+.third-menu__title {
+  font-family: "Dancing", Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+}
+.third-menu__sub {
+  font-size: 1.2rem;
+}
+.third-menu__content--dishes {
+  font-size: 0.9rem;
+}
+.third-menu__content--prices {
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
+.fourth-menu {
+  font-family: "Segoe", Arial, Helvetica, sans-serif;
+}
+.fourth-menu__title {
+  font-family: "Kaushan", Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+}
+.fourth-menu__sub {
+  font-size: 1.2rem;
+}
+.fourth-menu__content--dishes {
+  font-size: 0.9rem;
+}
+.fourth-menu__content--prices {
+  font-size: 0.9rem;
+  font-weight: bolder;
+}
+
 /** MENUS DE LA PAGE ACCUEIL **/
 .menu-display__top--first {
   width: 210px;
@@ -189,6 +286,9 @@ footer a {
   margin-top: 0%;
   margin-bottom: 10px;
 }
+.menu-display__top--first:hover {
+  animation: menu-zoom 300ms both ease;
+}
 .menu-display__top--second {
   width: 210px;
   height: 310px;
@@ -199,6 +299,9 @@ footer a {
   justify-content: center;
   background-color: #fff5fe;
 }
+.menu-display__top--second:hover {
+  animation: menu-zoom 300ms both ease;
+}
 .menu-display__bot--third {
   width: 210px;
   height: 310px;
@@ -208,6 +311,9 @@ footer a {
   flex-direction: column;
   justify-content: center;
   background-color: #f9f9f9;
+}
+.menu-display__bot--third:hover {
+  animation: menu-zoom 300ms both ease;
 }
 .menu-display__bot--fourth {
   width: 210px;
@@ -221,6 +327,9 @@ footer a {
 }
 .menu-display__bot--fourth .menu-title {
   margin-bottom: 5px;
+}
+.menu-display__bot--fourth:hover {
+  animation: menu-zoom 300ms both ease;
 }
 
 .menu-sub {
@@ -356,6 +465,10 @@ main {
   animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
 }
 
+main h2 {
+  margin: 40px auto 20px auto;
+}
+
 .first-menu {
   display: flex;
   flex-direction: column;
@@ -364,6 +477,8 @@ main {
   margin: auto;
   width: 80%;
   box-shadow: 0.5px 0.5px 7px #B0BEC5;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #fcdfdb;
 }
 .first-menu__content {
@@ -381,6 +496,29 @@ main {
   list-style-type: none;
   margin-bottom: 15px;
 }
+.first-menu i {
+  font-size: 3rem;
+}
+.first-menu__title {
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+.first-menu ul {
+  padding-left: 0%;
+}
+.first-menu__title-out {
+  display: flex;
+}
+.first-menu__title-out i {
+  font-size: 2rem;
+  position: relative;
+  top: 25px;
+  right: 15px;
+}
+
+main h2 {
+  margin: 40px auto 20px auto;
+}
 
 .second-menu {
   display: flex;
@@ -390,6 +528,8 @@ main {
   margin: auto;
   width: 80%;
   box-shadow: 0.5px 0.5px 7px #B0BEC5;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #fff5fe;
 }
 .second-menu__content {
@@ -407,6 +547,13 @@ main {
   list-style-type: none;
   margin-bottom: 15px;
 }
+.second-menu ul {
+  padding-left: 0%;
+}
+
+main h2 {
+  margin: 40px auto 20px auto;
+}
 
 .third-menu {
   display: flex;
@@ -416,6 +563,8 @@ main {
   margin: auto;
   width: 80%;
   box-shadow: 0.5px 0.5px 7px #B0BEC5;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #f9f9f9;
 }
 .third-menu__content {
@@ -433,6 +582,13 @@ main {
   list-style-type: none;
   margin-bottom: 15px;
 }
+.third-menu ul {
+  padding-left: 0%;
+}
+
+main h2 {
+  margin: 40px auto 20px auto;
+}
 
 .fourth-menu {
   display: flex;
@@ -442,6 +598,8 @@ main {
   margin: auto;
   width: 80%;
   box-shadow: 0.5px 0.5px 7px #B0BEC5;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #fdfffd;
 }
 .fourth-menu__content {
@@ -458,6 +616,9 @@ main {
 .fourth-menu li {
   list-style-type: none;
   margin-bottom: 15px;
+}
+.fourth-menu ul {
+  padding-left: 0%;
 }
 
 /*# sourceMappingURL=style.css.map */

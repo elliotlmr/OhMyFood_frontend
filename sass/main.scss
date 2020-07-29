@@ -47,6 +47,13 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Alte";
+    src: url(../fonts/altehaasgroteskbold.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+
 @import "./Utils/variables";
 @import "./Utils/mixins";
 @import "./Utils/keyframes";

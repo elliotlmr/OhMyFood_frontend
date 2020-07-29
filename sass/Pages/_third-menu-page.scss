@@ -1,4 +1,13 @@
+main {
+    h2 {
+    margin: 40px auto 20px auto;
+    }
+}
+
 .third-menu {
     @include page-menu-setting;
     background-color: $third-bg;
+    & ul {
+        padding-left: 0%;
+    }
 }
