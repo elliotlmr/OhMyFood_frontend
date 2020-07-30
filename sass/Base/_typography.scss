@@ -11,6 +11,10 @@ header {
     font-family: "Devonshire", Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 1.1rem;
+    i {
+        background: map-get($gradient, first-gr);
+        @include gr-rules;
+    }
     &:visited {
         color: inherit;
     }
@@ -30,9 +34,15 @@ header {
     &:visited {
         color: inherit;
     }
+    .menu-title {
+        background: map-get($gradient, second-gr);
+        @include gr-rules;
+    }
     .menu-sub {
-        font-family: "Croissant", Arial, Helvetica, sans-serif;
-        font-size: 1.4rem;
+        font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+        font-size: 1.6rem;
+        color: $second-txt;
+        font-weight: bold;
     }
 }
 
@@ -43,8 +53,13 @@ header {
     &:visited {
         color: inherit;
     }
+    .menu-title {
+        background: map-get($gradient, third-gr);
+        @include gr-rules;
+    }
     .menu-sub {
         font-size: 1.4rem;
+        color: $third-txt;
     }
 }
 
@@ -55,8 +70,13 @@ header {
     &:visited {
         color: inherit;
     }
+    .menu-title {
+        background: map-get($gradient, fourth-gr);
+        @include gr-rules;
+    }
     .menu-sub {
         font-size: 1.4rem;
+        color: $fourth-txt;
     }
 }
 
@@ -90,6 +110,10 @@ main {
 .first-menu {
     color: $first-txt;
     font-family: "Segoe", Arial, Helvetica, sans-serif;
+    i {
+        background: map-get($gradient, first-gr);
+        @include gr-rules;
+    }
     &__title {
         font-family: "Devonshire", Arial, Helvetica, sans-serif;
         font-size: 2rem;
@@ -116,9 +140,13 @@ main {
 
 .second-menu {
     font-family: 'Times New Roman', Times, serif;
+    background: map-get($gradient, second-gr-menu);
+    @include gr-rules;
     &__title {
         font-family: "Croissant", Arial, Helvetica, sans-serif;
         font-size: 2rem;
+        background: map-get($gradient, second-gr);
+        @include gr-rules;
     }
     &__sub {
         font-size: 1.3rem;
@@ -139,6 +167,8 @@ main {
     &__title {
         font-family: "Dancing", Arial, Helvetica, sans-serif;
         font-size: 4rem;
+        background: map-get($gradient, third-gr);
+        @include gr-rules;
     }
     &__sub {
         font-size: 1.2rem;
@@ -159,6 +189,8 @@ main {
     &__title {
         font-family: "Kaushan", Arial, Helvetica, sans-serif;
         font-size: 4rem;
+        background: map-get($gradient, fourth-gr);
+        @include gr-rules;
     }
     &__sub {
         font-size: 1.2rem;

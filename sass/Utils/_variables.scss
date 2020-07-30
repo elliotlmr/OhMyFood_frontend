@@ -11,9 +11,22 @@ $menu-margin: 0px 17px 30px 17px;
 $text-shd: 0.2px 0.2px 5px #B0BEC5;
 
 $first-txt: #3d1319;
+$second-txt: #c77412;
+$second-txt-two: #a56799;
+$second-txt-three: #6e4ccc;
+$third-txt: #0887fb;
+$fourth-txt: #3e923a;
 
 $gradient: (
-    second-gr: linear-gradient(45deg, #c77412 0%, #9460fb 100%),
-    third-gr:  linear-gradient(135deg, #1032dc 0%, #abd0f2 100%),
-    fourth-gr: linear-gradient(70deg, #3e923a 0%, #c7fe92 100%)
+    first-gr: -webkit-linear-gradient(0deg, #f05160 40%, #f6916a 70%),
+    second-gr: -webkit-linear-gradient(-35deg, #c77412 0%, #9460fb 100%),
+    second-gr-menu: -webkit-linear-gradient(90deg, #6e4ccc 0%, #a56799 50%, #c77412 80%),
+    third-gr: -webkit-linear-gradient(135deg, #90c9ff 20%, #0022ce 80%),
+    fourth-gr: -webkit-linear-gradient(35deg, #3e923a 30%, #c9fd9b 70%)
 )
+
+/** 
+background: map-get($gradient, );
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+**/

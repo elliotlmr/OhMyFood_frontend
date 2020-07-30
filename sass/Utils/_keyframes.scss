@@ -48,3 +48,21 @@
         transform: scale(1.25);
     }
 }
+
+@keyframes icon-zoom {
+    0% {
+        transform: scale(1) translateY(0%);
+    }
+    25% {
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: translateY(-25%);
+    }
+    75% {
+        transform: rotate(-25deg);
+    }
+    100% {
+        transform: scale(1.25) translateY(-50%);
+    }
+}

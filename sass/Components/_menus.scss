@@ -13,14 +13,21 @@
                 margin-bottom: 10px;
             }
             &:hover {
-                animation: menu-zoom 300ms both ease;
+                & i {
+                    animation: icon-zoom 300ms both ease;
+                }
+                .menu-title, .menu-sub {
+                    animation: menu-zoom 300ms both ease;
+                }
             }
         }
         &--second {
             @include menu-setting;
             background-color: $second-bg;
             &:hover {
-                animation: menu-zoom 300ms both ease;
+                .menu-title, .menu-sub {
+                    animation: menu-zoom 300ms both ease;
+                }
             }
         }
     }
@@ -29,7 +36,9 @@
             @include menu-setting;
             background-color: $third-bg;
             &:hover {
-                animation: menu-zoom 300ms both ease;
+                .menu-title, .menu-sub {
+                    animation: menu-zoom 300ms both ease;
+                }
             }
         }
         &--fourth {
@@ -39,7 +48,9 @@
                 margin-bottom: 5px;
             }
             &:hover {
-                animation: menu-zoom 300ms both ease;
+                .menu-title, .menu-sub {
+                    animation: menu-zoom 300ms both ease;
+                }
             }
         }
     }
