@@ -7,6 +7,17 @@ header {
     letter-spacing: -4px;
 }
 
+.head {
+    &__title {
+        & .home-btn {
+            text-decoration: none;
+            &:visited {
+                color: inherit;
+            }
+        }
+    }
+}
+
 .menu-display__top--first {
     font-family: "Devonshire", Arial, Helvetica, sans-serif;
     text-decoration: none;

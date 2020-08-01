@@ -66,3 +66,16 @@
         transform: scale(1.25) translateY(-50%);
     }
 }
+
+@keyframes sub-underline {
+    0% {
+        transform: scaleX(0);
+        opacity: 0%;
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}

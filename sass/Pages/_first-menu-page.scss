@@ -14,6 +14,22 @@ main {
         margin-top: 0%;
         margin-bottom: 0%;
     }
+    &__sub {
+        &--title {
+            @include sub-title;
+        }
+        &--line {
+            @include sub-line;
+            transform: scaleX(0);
+            transform-origin: left;
+            background-color: $first-txt;
+        }
+        &:hover {
+            .first-menu__sub--line {
+                animation: sub-underline 300ms ease both;
+            }
+        }
+    }
     & ul {
         padding-left: 0%;
     }

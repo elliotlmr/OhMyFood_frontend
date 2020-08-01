@@ -7,6 +7,22 @@ main {
 .second-menu {
     @include page-menu-setting;
     background-color: $second-bg;
+    &__sub {
+        &--title {
+            @include sub-title;
+        }
+        &--line {
+            @include sub-line;
+            transform: scaleX(0);
+            transform-origin: left;
+            background: linear-gradient(-35deg, #c77412 0%, #9460fb 100%);
+        }
+        &:hover {
+            .second-menu__sub--line {
+                animation: sub-underline 300ms ease both;
+            }
+        }
+    }
     & ul {
         padding-left: 0%;
     }

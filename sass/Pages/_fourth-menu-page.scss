@@ -7,6 +7,22 @@ main {
 .fourth-menu {
     @include page-menu-setting;
     background-color: $fourth-bg;
+    &__sub {
+        &--title {
+            @include sub-title;
+        }
+        &--line {
+            @include sub-line;
+            transform: scaleX(0);
+            transform-origin: left;
+            background: linear-gradient(35deg, #3e923a 30%, #c9fd9b 70%);
+        }
+        &:hover {
+            .fourth-menu__sub--line {
+                animation: sub-underline 300ms ease both;
+            }
+        }
+    }
     & ul {
         padding-left: 0%;
     }

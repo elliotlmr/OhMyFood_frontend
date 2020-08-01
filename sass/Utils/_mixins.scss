@@ -50,3 +50,19 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+@mixin mobile-version {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin sub-title {
+    margin-bottom: 0%;
+    cursor: default;
+}
+
+@mixin sub-line {
+    display: block;
+    height: 2px;
+}

@@ -109,6 +109,18 @@
     transform: scale(1.25) translateY(-50%);
   }
 }
+@keyframes sub-underline {
+  0% {
+    transform: scaleX(0);
+    opacity: 0%;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 html {
   width: 100%;
   height: 100%;
@@ -129,6 +141,13 @@ header {
   font-size: 2rem;
   color: #f9ca48;
   letter-spacing: -4px;
+}
+
+.head__title .home-btn {
+  text-decoration: none;
+}
+.head__title .home-btn:visited {
+  color: inherit;
 }
 
 .menu-display__top--first {
@@ -573,6 +592,20 @@ main h2 {
   margin-top: 0%;
   margin-bottom: 0%;
 }
+.first-menu__sub--title {
+  margin-bottom: 0%;
+  cursor: default;
+}
+.first-menu__sub--line {
+  display: block;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background-color: #3d1319;
+}
+.first-menu__sub:hover .first-menu__sub--line {
+  animation: sub-underline 300ms ease both;
+}
 .first-menu ul {
   padding-left: 0%;
 }
@@ -617,6 +650,20 @@ main h2 {
   list-style-type: none;
   margin-bottom: 15px;
 }
+.second-menu__sub--title {
+  margin-bottom: 0%;
+  cursor: default;
+}
+.second-menu__sub--line {
+  display: block;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(-35deg, #c77412 0%, #9460fb 100%);
+}
+.second-menu__sub:hover .second-menu__sub--line {
+  animation: sub-underline 300ms ease both;
+}
 .second-menu ul {
   padding-left: 0%;
 }
@@ -652,6 +699,20 @@ main h2 {
   list-style-type: none;
   margin-bottom: 15px;
 }
+.third-menu__sub--title {
+  margin-bottom: 0%;
+  cursor: default;
+}
+.third-menu__sub--line {
+  display: block;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(135deg, #90c9ff 20%, #0022ce 80%);
+}
+.third-menu__sub:hover .third-menu__sub--line {
+  animation: sub-underline 300ms ease both;
+}
 .third-menu ul {
   padding-left: 0%;
 }
@@ -686,6 +747,20 @@ main h2 {
 .fourth-menu li {
   list-style-type: none;
   margin-bottom: 15px;
+}
+.fourth-menu__sub--title {
+  margin-bottom: 0%;
+  cursor: default;
+}
+.fourth-menu__sub--line {
+  display: block;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: linear-gradient(35deg, #3e923a 30%, #c9fd9b 70%);
+}
+.fourth-menu__sub:hover .fourth-menu__sub--line {
+  animation: sub-underline 300ms ease both;
 }
 .fourth-menu ul {
   padding-left: 0%;
