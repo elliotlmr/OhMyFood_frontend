@@ -4,6 +4,9 @@ main {
     justify-content: center;
     height: 100%;
     padding-bottom: 10%;
+    @include mobile-version {
+        padding-bottom: 28%;
+    }
 }
 
 .menu-display {
@@ -16,9 +19,17 @@ main {
     &__top {
         display: flex;
         justify-content: center;
+        @include mobile-version {
+            flex-direction: column;
+            margin: auto;
+        }
     }
     &__bot {
         display: flex;
         justify-content: center;
+        @include mobile-version {
+            flex-direction: column;
+            margin: auto;
+        }
     }
 }

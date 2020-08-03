@@ -513,6 +513,11 @@ main {
   height: 100%;
   padding-bottom: 10%;
 }
+@media (max-width: 599px) {
+  main {
+    padding-bottom: 28%;
+  }
+}
 
 .menu-display {
   display: flex;
@@ -526,9 +531,21 @@ main {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 599px) {
+  .menu-display__top {
+    flex-direction: column;
+    margin: auto;
+  }
+}
 .menu-display__bot {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 599px) {
+  .menu-display__bot {
+    flex-direction: column;
+    margin: auto;
+  }
 }
 
 .footer {
@@ -569,6 +586,8 @@ main h2 {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #fcdfdb;
+  /** Debut mobile version **/
+  /** Fin mobile version **/
 }
 .first-menu__content {
   display: flex;
@@ -584,6 +603,38 @@ main h2 {
 .first-menu li {
   list-style-type: none;
   margin-bottom: 15px;
+}
+@media (max-width: 599px) {
+  .first-menu {
+    width: 95%;
+    text-align: center;
+  }
+  .first-menu__content {
+    justify-content: center;
+  }
+  .first-menu__content--dishes {
+    text-align: center;
+  }
+  .first-menu__content--prices {
+    display: none;
+  }
+  .first-menu .phone-price {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border-top: 1px dotted;
+    width: 20%;
+    padding-top: 10px;
+  }
+  .first-menu br {
+    display: inline-block;
+  }
+}
+.first-menu span {
+  display: none;
+}
+.first-menu br {
+  display: none;
 }
 .first-menu i {
   font-size: 3rem;
@@ -634,6 +685,8 @@ main h2 {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #fff5fe;
+  /** Debut mobile version **/
+  /** Fin mobile version **/
 }
 .second-menu__content {
   display: flex;
@@ -649,6 +702,38 @@ main h2 {
 .second-menu li {
   list-style-type: none;
   margin-bottom: 15px;
+}
+@media (max-width: 599px) {
+  .second-menu {
+    width: 95%;
+    text-align: center;
+  }
+  .second-menu__content {
+    justify-content: center;
+  }
+  .second-menu__content--dishes {
+    text-align: center;
+  }
+  .second-menu__content--prices {
+    display: none;
+  }
+  .second-menu .phone-price {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border-top: 1px dotted;
+    width: 20%;
+    padding-top: 10px;
+  }
+  .second-menu br {
+    display: inline-block;
+  }
+}
+.second-menu span {
+  display: none;
+}
+.second-menu br {
+  display: none;
 }
 .second-menu__sub--title {
   margin-bottom: 0%;
@@ -683,6 +768,8 @@ main h2 {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #f9f9f9;
+  /** Debut mobile version **/
+  /** Fin mobile version **/
 }
 .third-menu__content {
   display: flex;
@@ -698,6 +785,38 @@ main h2 {
 .third-menu li {
   list-style-type: none;
   margin-bottom: 15px;
+}
+@media (max-width: 599px) {
+  .third-menu {
+    width: 95%;
+    text-align: center;
+  }
+  .third-menu__content {
+    justify-content: center;
+  }
+  .third-menu__content--dishes {
+    text-align: center;
+  }
+  .third-menu__content--prices {
+    display: none;
+  }
+  .third-menu .phone-price {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border-top: 1px dotted;
+    width: 20%;
+    padding-top: 10px;
+  }
+  .third-menu br {
+    display: inline-block;
+  }
+}
+.third-menu span {
+  display: none;
+}
+.third-menu br {
+  display: none;
 }
 .third-menu__sub--title {
   margin-bottom: 0%;
@@ -732,6 +851,8 @@ main h2 {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #fdfffd;
+  /** Debut mobile version **/
+  /** Fin mobile version **/
 }
 .fourth-menu__content {
   display: flex;
@@ -747,6 +868,38 @@ main h2 {
 .fourth-menu li {
   list-style-type: none;
   margin-bottom: 15px;
+}
+@media (max-width: 599px) {
+  .fourth-menu {
+    width: 95%;
+    text-align: center;
+  }
+  .fourth-menu__content {
+    justify-content: center;
+  }
+  .fourth-menu__content--dishes {
+    text-align: center;
+  }
+  .fourth-menu__content--prices {
+    display: none;
+  }
+  .fourth-menu .phone-price {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    border-top: 1px dotted;
+    width: 20%;
+    padding-top: 10px;
+  }
+  .fourth-menu br {
+    display: inline-block;
+  }
+}
+.fourth-menu span {
+  display: none;
+}
+.fourth-menu br {
+  display: none;
 }
 .fourth-menu__sub--title {
   margin-bottom: 0%;
