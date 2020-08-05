@@ -15,6 +15,8 @@ $second-txt: #c77412;
 $second-txt-two: #a56799;
 $second-txt-three: #6e4ccc;
 $third-txt: #0887fb;
+$third-txt-two: #0070d8;
+$third-txt-three: #0022ce;
 $fourth-txt: #3e923a;
 
 $gradient: (
@@ -22,7 +24,8 @@ $gradient: (
     second-gr: -webkit-linear-gradient(-35deg, #c77412 0%, #9460fb 100%),
     second-gr-menu: -webkit-linear-gradient(90deg, #6e4ccc 0%, #a56799 50%, #c77412 80%),
     third-gr: -webkit-linear-gradient(135deg, #90c9ff 20%, #0022ce 80%),
-    fourth-gr: -webkit-linear-gradient(35deg, #3e923a 30%, #c9fd9b 70%)
+    fourth-gr: -webkit-linear-gradient(35deg, #3e923a 30%, #c9fd9b 70%),
+    fourth-gr-reverse: -webkit-linear-gradient(35deg, #c9fd9b 30%, #3e923a 70%)
 )
 
 /** 

@@ -39,6 +39,23 @@ main {
         display: none;
     }
     /** Fin mobile version **/
+    &__presub {
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 50px;
+        &--around {
+            height: 3px;
+            width: 30%;
+            margin: 15px 0px 15px 0px;
+            &.ar-one {
+                background: map-get($gradient, fourth-gr);
+            }
+            &.ar-two {
+                background: map-get($gradient, fourth-gr-reverse);
+            }
+        }
+    }
     &__sub {
         &--title {
             @include sub-title;
