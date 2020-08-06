@@ -1,28 +1,33 @@
 @font-face {
+  /** Font first menu **/
   font-family: "Devonshire";
   src: url(../fonts/Devonshire-Regular.ttf);
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
+  /** Font second menu **/
   font-family: "Croissant";
   src: url(../fonts/croissantone-regular.ttf);
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
+  /** Font third menu **/
   font-family: "Dancing";
   src: url(../fonts/DancingScript-Regular.otf);
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
+  /** Font fourth menu **/
   font-family: "Kaushan";
   src: url(../fonts/kaushanscript-regular.ttf);
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
+  /** Font header **/
   font-family: "Gelder";
   src: url(../fonts/GelderSans-ExtraBold.ttf);
   font-style: normal;
@@ -46,6 +51,16 @@
   font-style: normal;
   font-weight: bold;
 }
+/** Couleurs header / footer / btn **/
+/** Couleurs backgrounds **/
+/** Ombres **/
+/** Couleurs des textes / lignes **/
+/** Global settings for menus in the homepage **/
+/** Global settings for menus in their own pages (full sized) **/
+/** Setting for next-btn(dots) animation **/
+/** Setting gradients **/
+/** Settings for menu's subtitle animation (underline) **/
+/** Responsive rules **/
 @keyframes wiggle {
   25% {
     transform: translateX(1%);
@@ -134,6 +149,12 @@ body {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0.5px 0.5px 7px #B0BEC5;
+}
+@media screen and (min-width: 2559px) {
+  body {
+    width: 60%;
+    max-width: none;
+  }
 }
 
 /** PAGE ACCUEIL **/
@@ -379,6 +400,12 @@ main h2 {
 .menu-display__top--first:hover .menu-title, .menu-display__top--first:hover .menu-sub {
   animation: menu-zoom 300ms both ease;
 }
+@media screen and (min-width: 2559px) {
+  .menu-display__top--first {
+    width: 400px;
+    height: 600px;
+  }
+}
 .menu-display__top--second {
   width: 210px;
   height: 310px;
@@ -392,6 +419,12 @@ main h2 {
 .menu-display__top--second:hover .menu-title, .menu-display__top--second:hover .menu-sub {
   animation: menu-zoom 300ms both ease;
 }
+@media screen and (min-width: 2559px) {
+  .menu-display__top--second {
+    width: 400px;
+    height: 600px;
+  }
+}
 .menu-display__bot--third {
   width: 210px;
   height: 310px;
@@ -404,6 +437,12 @@ main h2 {
 }
 .menu-display__bot--third:hover .menu-title, .menu-display__bot--third:hover .menu-sub {
   animation: menu-zoom 300ms both ease;
+}
+@media screen and (min-width: 2559px) {
+  .menu-display__bot--third {
+    width: 400px;
+    height: 600px;
+  }
 }
 .menu-display__bot--fourth {
   width: 210px;
@@ -420,6 +459,12 @@ main h2 {
 }
 .menu-display__bot--fourth:hover .menu-title, .menu-display__bot--fourth:hover .menu-sub {
   animation: menu-zoom 300ms both ease;
+}
+@media screen and (min-width: 2559px) {
+  .menu-display__bot--fourth {
+    width: 400px;
+    height: 600px;
+  }
 }
 
 .menu-sub {
@@ -518,6 +563,16 @@ main {
     padding-bottom: 28%;
   }
 }
+@media screen and (min-width: 2559px) {
+  main {
+    height: 1500px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1025px) {
+  main {
+    height: 1180px;
+  }
+}
 
 .menu-display {
   display: flex;
@@ -569,6 +624,12 @@ main {
 }
 .footer__right--title:hover, .footer__right--title:active {
   animation: wiggle 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
+}
+@media screen and (min-width: 2559px) {
+  .footer {
+    max-width: none;
+    width: 60%;
+  }
 }
 
 main h2 {

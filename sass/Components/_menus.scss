@@ -20,6 +20,10 @@
                     animation: menu-zoom 300ms both ease;
                 }
             }
+            @include fourK-version {
+                width: 400px;
+                height: 600px;
+            }
         }
         &--second {
             @include menu-setting;
@@ -28,6 +32,10 @@
                 .menu-title, .menu-sub {
                     animation: menu-zoom 300ms both ease;
                 }
+            }
+            @include fourK-version {
+                width: 400px;
+                height: 600px;
             }
         }
     }
@@ -40,6 +48,10 @@
                     animation: menu-zoom 300ms both ease;
                 }
             }
+            @include fourK-version {
+                width: 400px;
+                height: 600px;
+            }
         }
         &--fourth {
             @include menu-setting;
@@ -51,6 +63,10 @@
                 .menu-title, .menu-sub {
                     animation: menu-zoom 300ms both ease;
                 }
+            }
+            @include fourK-version {
+                width: 400px;
+                height: 600px;
             }
         }
     }

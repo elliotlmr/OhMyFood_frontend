@@ -10,4 +10,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: $menu-shadow;
+    @include fourK-version {
+        width: 60%;
+        max-width: none;
+    }
 }

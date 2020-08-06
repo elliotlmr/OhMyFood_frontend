@@ -1,3 +1,5 @@
+/** Global settings for menus in the homepage **/
+
 @mixin menu-setting {
     width: 210px;
     height: 310px;
@@ -7,6 +9,8 @@
     flex-direction: column;
     justify-content: center;
 }
+
+/** Global settings for menus in their own pages (full sized) **/
 
 @mixin page-menu-setting {
     display: flex;
@@ -35,6 +39,8 @@
     }
 }
 
+/** Setting for next-btn(dots) animation **/
+
 @mixin dot {
     display: block;
     background-color: $color-secondary;
@@ -45,17 +51,15 @@
     margin: 12px 2px 10px 2px;
 }
 
+/** Setting gradients **/
+
 @mixin gr-rules {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-@mixin mobile-version {
-    @media (max-width: 599px) {
-        @content;
-    }
-}
+/** Settings for menu's subtitle animation (underline) **/
 
 @mixin sub-title {
     margin: 0%;
@@ -65,4 +69,24 @@
 @mixin sub-line {
     display: block;
     height: 2px;
+}
+
+/** Responsive rules **/
+
+@mixin mobile-version {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin tablet-version {
+    @media screen and (min-width: 800px) and (max-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin fourK-version {
+    @media screen and (min-width: 2559px) {
+        @content;
+    }
 }

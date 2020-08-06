@@ -7,6 +7,12 @@ main {
     @include mobile-version {
         padding-bottom: 28%;
     }
+    @include fourK-version {
+        height: 1500px;
+    }
+    @include tablet-version {
+        height: 1180px;
+    }
 }
 
 .menu-display {
